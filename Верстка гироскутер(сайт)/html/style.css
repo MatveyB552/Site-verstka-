@@ -1,0 +1,456 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* КНОПКИ */
+.btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-orange {
+    background-color: #f0a500;
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: #d18e00;
+}
+
+.btn-white {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0;
+}
+
+.btn.sm {
+    padding: 5px 15px;
+    font-size: 12px;
+}
+
+/* ВЕРХНЯЯ ПАНЕЛЬ */
+.top-bar {
+    background: white;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* ШАПКА */
+.header {
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.nav-list a:hover {
+    color: #f0a500;
+}
+
+/* ГЛАВНЫЙ БАННЕР */
+.hero {
+    height: 500px;
+    /* ПУТЬ К КАРТИНКАМ */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../scooter-3620869_960_720.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    text-align: center;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ПРЕИМУЩЕСТВА */
+.advantages {
+    padding: 60px 0;
+    background: white;
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    font-weight: normal;
+    color: #555;
+}
+
+.arrows i {
+    font-size: 20px;
+    color: #999;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.adv-grid {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+}
+
+/* Стили для картинок преимуществ */
+.adv-icon-img {
+    height: 60px; 
+    width: auto;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.adv-item p {
+    font-size: 16px;
+}
+
+/* О НАС */
+.about {
+    padding: 40px 0;
+    background: #f9f9f9;
+}
+
+.about h2 {
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 15px;
+    color: #666;
+    max-width: 900px;
+}
+
+/* ПОДПИСКА */
+.subscribe {
+    background: #f0a500;
+    padding: 30px 0;
+    margin: 40px 0;
+    color: white;
+}
+
+.sub-form {
+    display: flex;
+    gap: 15px;
+}
+
+.sub-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+/* ОСОБЕННОСТИ */
+.features {
+    padding: 20px 0 40px;
+}
+
+.features h2 {
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.feat-list li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.features-desc {
+    color: #777;
+    max-width: 800px;
+}
+
+/* КАТАЛОГ */
+.catalog {
+    background: #e5e5e5;
+    padding: 40px 0;
+}
+
+.catalog-header {
+    margin-bottom: 30px;
+}
+
+.catalog-header h2 {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.filter-list {
+    display: flex;
+    gap: 15px;
+    color: #777;
+    font-size: 14px;
+}
+
+.filter-list li {
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.filter-list li.active {
+    background: #f0a500;
+    color: white;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #f0a500;
+    color: white;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.img-wrap {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.prod-name {
+    font-size: 14px;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* КОНСУЛЬТАНТЫ */
+.consultants {
+    padding: 60px 0;
+}
+
+.consultants h2 {
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.consult-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.consult-card {
+    display: flex;
+    background: #f9f9f9;
+    padding: 10px;
+    gap: 15px;
+    flex: 1;
+}
+
+.consult-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.consult-info h4 {
+    margin-bottom: 5px;
+}
+
+.consult-info p {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* БРЕНДЫ */
+.brands-bar {
+    background: #eee;
+    padding: 25px 0;
+    color: #999;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* ПОЛЕЗНАЯ ИНФОРМАЦИЯ */
+.info {
+    padding: 60px 0;
+}
+
+.info h2 {
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.info-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.info-card p {
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+}
+
+/* ФУТЕР */
+.footer {
+    background: #e5e5e5;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-col p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.footer-col h4 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #666;
+}
+
+.footer-col ul li a:hover {
+    color: #f0a500;
+}
+
+.copyright {
+    margin-top: 30px;
+    font-weight: bold;
+    color: #555 !important;
+}
